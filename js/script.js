@@ -22,7 +22,9 @@ cart_icon.addEventListener('click', function () {
 var shoeDownList = document.getElementById('shoes_pics');
 var showedShoe = document.getElementById('showedShoe');
 var shoeBorder = document.getElementsByClassName("thumb");
-
+console.log(shoeDownList.children[0].children[0]);
+shoeDownList.children[0].children[0].children[0].style.borderRadius='0px';
+shoeDownList.children[0].children[0].classList.add('thumb');
 
 shoeDownList.addEventListener('click', function (e) {
     var border = e.target.parentNode;
